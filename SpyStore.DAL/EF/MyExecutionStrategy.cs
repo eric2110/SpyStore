@@ -1,11 +1,13 @@
-﻿using System;using Microsoft.EntityFrameworkCore;
+﻿using System;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Storage;
 
 namespace SpyStore.DAL.EF
 {
     public class MyExecutionStrategy : ExecutionStrategy
     {
-        public MyExecutionStrategy(DbContext context) :        this(context, DefaultMaxRetryCount, DefaultMaxDelay)
+        public MyExecutionStrategy(DbContext context) :
+        this(context, DefaultMaxRetryCount, DefaultMaxDelay)
         {}
 
         public MyExecutionStrategy(DbContext context, int maxRetryCount, TimeSpan maxRetryDelay) :

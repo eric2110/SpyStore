@@ -1,5 +1,7 @@
-﻿using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.Infrastructure;
+﻿using Microsoft.EntityFrameworkCore;
+
+using Microsoft.EntityFrameworkCore.Infrastructure;
+
 using SpyStore.Models.Entities;
 
 namespace SpyStore.DAL.EF
